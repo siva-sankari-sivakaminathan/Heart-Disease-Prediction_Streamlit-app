@@ -251,23 +251,12 @@ def run():
                     heart_disease, no_heart_disease = st.columns(2)
 
                     
-                    if predicted_value == 0:
-                        st.subheader("Expected Percentage of Being a")
-                        st.subheader(":green[Not a Heart Patient]")
-
+                   if predicted_value == 0:
+                        st.subheader(f"The results indicate a {prediction_prop[0, 0]:.1f}% chance of *not being a heart patient* and a {prediction_prop[0, 1]:.1f}% chance of *being a heart patient*.")
+                        st.write("We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.")
                     else:
-                        st.subheader(f"Expected Percentage of Being a")
-                        st.subheader(":red[Heart Patient]")
-
-                    with heart_disease:
-                        
-                        st.subheader(":green[*Not A Heart Patient*]")
-                        st.subheader(f"{prediction_prop[0, 0]}%")
-
-                    with no_heart_disease:
-                       
-                        st.subheader(f":red[*Heart Patient*]")
-                        st.subheader(f"{prediction_prop[0, 1]}%")
+                        st.subheader(f"The results indicate a {prediction_prop[0, 0]:.1f}% chance of *not being a heart patient* and a {prediction_prop[0, 1]:.1f}% chance of *being a heart patient*.")
+                        st.write("Please consult a doctor for a thorough evaluation and guidance on your heart health.")
 
 
 run()
