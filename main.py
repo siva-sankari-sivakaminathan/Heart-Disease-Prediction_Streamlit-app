@@ -81,8 +81,8 @@ def run():
 
         div[data-baseweb=select]>div{
             cursor: pointer;
-            background-color: #111;
-            border: 1px solid #555;
+            background-color: #fff;
+            border: 1px solid #000;
         }
         div[data-baseweb=select]>div:hover{
             border-color: #B72F39
@@ -91,7 +91,7 @@ def run():
 
         div[data-baseweb=base-input]{
             background-color: #fff;
-            border: 4px solid #ccc;
+            border: 4px solid #000;
             border-radius: 5px;
             padding: 5px
             color: #000;
@@ -104,6 +104,7 @@ def run():
             padding: 18px;
             border-radius: 30px;
             opacity: 0.8;
+            color: #fff;
         }
         div[data-testid=stFormSubmitButton]  p{
             font-weight: bold;
@@ -253,11 +254,11 @@ def run():
 
                     
                 if predicted_value == 0:
-                        st.subheader(f"The results indicate a <span style='color: green;'>{prediction_prop[0, 0]:.1f}%</span>chance of *not being a heart patient* and a <span style='color: red;'>{prediction_prop[0, 1]:.1f}%</span>chance of *being a heart patient*.")
-                        st.write(f"We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.")
+                    st.markdown(f"### The results indicate a {prediction_prop[0, 0]:.1f}% chance of *not being a heart patient* and a {prediction_prop[0, 1]:.1f}% chance of *being a heart patient*.")
+                    st.markdown("We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.")
                 else:
-                        st.subheader(f"The results indicate a <span style='color: green;'>{prediction_prop[0, 0]:.1f}% </span> chance of *not being a heart patient* and a <span style='color: red;'>{prediction_prop[0, 1]:.1f}% </span>chance of *being a heart patient*.")
-                        st.write(f"Please consult a doctor for a thorough evaluation and guidance on your heart health.")
+                    st.markdown(f"### The results indicate a {prediction_prop[0, 0]:.1f}% chance of *not being a heart patient* and a {prediction_prop[0, 1]:.1f}% chance of *being a heart patient*.")
+                    st.markdown("Please consult a doctor for a thorough evaluation and guidance on your heart health.")
 
 
 run()
