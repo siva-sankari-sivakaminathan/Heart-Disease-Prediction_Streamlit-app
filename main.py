@@ -139,7 +139,7 @@ def run():
     st.write("")
 
     with header:
-        st.title("Heart Failure Prediction 💔")
+        st.title("Heart Failure Prediction")
         st.write("")
 
     with content:
