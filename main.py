@@ -253,7 +253,7 @@ def run():
 
                     heart_disease, no_heart_disease = st.columns(2)
 
-              if predicted_value == 0:
+                if predicted_value == 0:
                 # Displaying the result with colored percentages
                 st.markdown(
                     f"""
@@ -269,7 +269,7 @@ def run():
                     unsafe_allow_html=True
                 )
                   
-            else:
+               else:
                 # Displaying the result with colored percentages
                 st.markdown(
                     f"""
