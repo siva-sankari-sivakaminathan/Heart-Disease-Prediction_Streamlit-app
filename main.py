@@ -264,7 +264,7 @@ def run():
                             <span style="color: red; font-weight: bold;">{prediction_prop[0, 1]:.1f}%</span> 
                             chance of *being a heart patient*.
                         </h3>
-                        <p style="font-family: Arial, sans-serif;">We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.</p>
+                        <p style="font-family: Arial, sans-serif; font-weight: bold;">We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.</p>
                         """,
                         unsafe_allow_html=True
                     )
@@ -279,7 +279,7 @@ def run():
                             <span style="color: red; font-weight: bold;">{prediction_prop[0, 1]:.1f}%</span> 
                             chance of *being a heart patient*.
                         </h3>
-                        <p style="font-family: Arial, sans-serif;">Please consult a doctor for a thorough evaluation and guidance on your heart health.</p>
+                        <p style="font-family: Arial, sans-serif; font-weight: bold;">Please consult a doctor for a thorough evaluation and guidance on your heart health.</p>
                         """,
                         unsafe_allow_html=True
                     )
