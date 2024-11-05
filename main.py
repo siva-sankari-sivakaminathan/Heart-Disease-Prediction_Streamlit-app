@@ -90,11 +90,12 @@ def run():
         }
 
         div[data-baseweb=base-input]{
-            background-color: #fff;
-            border: 2px solid #000;
-            border-radius: 5px;
-            padding: 5px
-            color: #000;
+            background-color: #fff; /* White background */
+            border: 2px solid #000; /* Black border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 5px; /* Padding inside the input box */
+            color: #000; /* Text color */
+            box-shadow: none; /* Remove any shadow to prevent color conflicts */
         }
 
         div[data-testid=stFormSubmitButton]> button{
