@@ -255,35 +255,35 @@ def run():
 
                 if predicted_value == 0:
                 # Displaying the result with colored percentages
-                st.markdown(
-                    f"""
-                    <h3 style="font-size: 25px; font-family: Arial, sans-serif;">
-                        The results indicate a 
-                        <span style="color: green; font-weight: bold;">{prediction_prop[0, 0]:.1f}%</span> 
-                        chance of *not being a heart patient* and a 
-                        <span style="color: red; font-weight: bold;">{prediction_prop[0, 1]:.1f}%</span> 
-                        chance of *being a heart patient*.
-                    </h3>
-                    <p style="font-family: Arial, sans-serif;">We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.</p>
-                    """,
-                    unsafe_allow_html=True
-                )
+                    st.markdown(
+                        f"""
+                        <h3 style="font-size: 25px; font-family: Arial, sans-serif;">
+                            The results indicate a 
+                            <span style="color: green; font-weight: bold;">{prediction_prop[0, 0]:.1f}%</span> 
+                            chance of *not being a heart patient* and a 
+                            <span style="color: red; font-weight: bold;">{prediction_prop[0, 1]:.1f}%</span> 
+                            chance of *being a heart patient*.
+                        </h3>
+                        <p style="font-family: Arial, sans-serif;">We recommend maintaining a healthy lifestyle and regular check-ups to ensure continued well-being.</p>
+                        """,
+                        unsafe_allow_html=True
+                    )
                   
                else:
                 # Displaying the result with colored percentages
-                st.markdown(
-                    f"""
-                    <h3 style="font-size: 25px; font-family: Arial, sans-serif;">
-                        The results indicate a 
-                        <span style="color: green; font-weight: bold;">{prediction_prop[0, 0]:.1f}%</span> 
-                        chance of *not being a heart patient* and a 
-                        <span style="color: red; font-weight: bold;">{prediction_prop[0, 1]:.1f}%</span> 
-                        chance of *being a heart patient*.
-                    </h3>
-                    <p style="font-family: Arial, sans-serif;">Please consult a doctor for a thorough evaluation and guidance on your heart health.</p>
-                    """,
-                    unsafe_allow_html=True
-                )
+                    st.markdown(
+                        f"""
+                        <h3 style="font-size: 25px; font-family: Arial, sans-serif;">
+                            The results indicate a 
+                            <span style="color: green; font-weight: bold;">{prediction_prop[0, 0]:.1f}%</span> 
+                            chance of *not being a heart patient* and a 
+                            <span style="color: red; font-weight: bold;">{prediction_prop[0, 1]:.1f}%</span> 
+                            chance of *being a heart patient*.
+                        </h3>
+                        <p style="font-family: Arial, sans-serif;">Please consult a doctor for a thorough evaluation and guidance on your heart health.</p>
+                        """,
+                        unsafe_allow_html=True
+                    )
 
 
 run()
