@@ -91,7 +91,7 @@ def run():
 
         div[data-baseweb=base-input]{
             background-color: #fff;
-            border: 4px solid #000;
+            border: 2px solid #000;
             border-radius: 5px;
             padding: 5px
             color: #000;
