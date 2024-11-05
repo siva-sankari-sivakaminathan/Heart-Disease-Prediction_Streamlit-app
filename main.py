@@ -268,9 +268,8 @@ def run():
                         """,
                         unsafe_allow_html=True
                     )
-                  
-               else:
-                # Displaying the result with colored percentages
+                else:
+                    # Displaying the result with colored percentages
                     st.markdown(
                         f"""
                         <h3 style="font-size: 25px; font-family: Arial, sans-serif;">
